@@ -53,7 +53,7 @@ let  App = () => {
   return (
       <div className="calculator">
       <h1>{previousInput}</h1>
-      <input type="text" className="calculator-display" readOnly value={data} />
+      <input type="text" className="calculator-display" readOnly value={!data? 0 : data} />
       <button className="btn remove" onClick={handleRemove}>remove</button>
       <div className="calculator-buttons">
       <button className="btn operator" onClick={handleClear}>AC</button>
